@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Shu Yi Ho.">
+    <title>Shu Yi Ho — Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+        <a href="index.html">Home</a><a href="works.html">Works</a><a class="is-current" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <h1>Need Help?</h1>
+        <div class="contact-list">
+          <p>Instagram<br><a href="https://www.instagram.com/hshuyii?igsi=MWRlZ2N1d3I5MHM4ZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">@HSHUYII</a></p>
+          <p>Gmail<br><a href="mailto:shuyi0084@gmail.com">shuyi0084@gmail.com</a></p>
+          <p>LinkedIn<br><a href="https://www.linkedin.com/in/shu-yi-ho-846b08326?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">Shu Yi Ho</a></p>
+        </div>
+      </section>
+
+      <section class="contact-assistant" aria-labelledby="contact-assistant-title">
+        <h2 id="contact-assistant-title">What brings you here?</h2>
+        <p>Choose an option and send Shu Yi a short enquiry.</p>
+        <div class="enquiry-options" aria-label="Enquiry type">
+          <button type="button" data-enquiry="Hiring / Recruitment" data-message="I’m interested in discussing a design opportunity with you.">Hiring / Recruitment</button>
+          <button type="button" data-enquiry="Freelance Project" data-message="I have a freelance design project I’d like to discuss with you.">Freelance Project</button>
+          <button type="button" data-enquiry="Collaboration" data-message="I’m interested in collaborating with you on a creative project.">Collaboration</button>
+          <button type="button" data-enquiry="Resume / CV" data-message="I’d like to request your Resume / CV.">Resume / CV</button>
+          <button type="button" data-enquiry="Something Else" data-message="">Something Else</button>
+        </div>
+
+        <form class="enquiry-form" data-enquiry-form hidden>
+          <p class="form-type" data-form-type></p>
+          <label>Name<input name="name" autocomplete="name" required></label>
+          <label>Company name<input name="company" autocomplete="organization"></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="send-enquiry" type="submit">Continue to email</button>
+          <p class="email-note">Your email app will open with this enquiry addressed to Shu Yi.</p>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="site-footer"><a href="contact.html">Gmail / LinkedIn / Instagram</a></footer>
+    <script src="js/contact-enquiry.js"></script>
+  </body>
+</html>
